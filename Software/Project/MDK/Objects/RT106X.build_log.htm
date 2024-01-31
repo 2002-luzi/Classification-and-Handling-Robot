@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Xiangao Lu, 1, LIC=ATTQ1-CPB50-129LE-59E8H-6FJ8J-9DI64
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.13.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\SmartCar\17\RT1064_RTThread_Library-master\1.14\Smart_Car_Demo!!!!!\Project\MDK\RT106X.uvprojx
+Project File Date:  08/15/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'nor_sdram_zf_dtcm_v6'
+../CODE/motor.c(294): warning: passing 'char [18]' to parameter of type 'uint8 *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+            uart_putbuff(USART_1, msg, 18);
+                                  ^~~
+../../Libraries/seekfree_libraries\zf_uart.h(74): note: passing argument to parameter 'buff' here
+void uart_putbuff(UARTN_enum uartn, uint8 *buff, uint32 len);
+                                           ^
+1 warning generated.
+compiling motor.c...
+linking...
+Program Size: Code=116912 RO-data=10184 RW-data=1252 ZI-data=458524  
+".\Objects\RT106X.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+   * Component: DSP Variant: Library Version: 1.6.0
+
+Package Vendor: NXP
+                https://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MIMXRT1064_DFP.13.1.0.pack
+                NXP.MIMXRT1064_DFP.13.1.0
+                Device Family Pack for MIMXRT1064
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nor_sdram_zf_dtcm_v6
+  D:\Users\15659\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  D:\Users\15659\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
+  D:\Users\15659\AppData\Local\Arm\Packs\NXP\MIMXRT1064_DFP\13.1.0
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: ARM::CMSIS:DSP:Library:1.6.0
+      Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM7lfdp_math.lib
+      Include file:  CMSIS\DSP\Include\arm_math.h
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

@@ -1,0 +1,32 @@
+data = (char)data_;
+            static int uart_num = 0;
+            uart_buff[uart_num] = data, ++uart_num;
+
+/***********************
+            if (uart_num == PACK_LEN)
+            {
+                rt_kprintf8("uart_buff:");
+                for (int i = 0; i < uart_num-1; i++)
+                    rt_kprintf8("%c", uart_buff[i]);
+                rt_kprintf8("%d", uart_buff[PACK_LEN-1]);
+                rt_kprintf8("\tnum:%d\n", uart_num);
+            }
+************************/
+
+            if (uart_buff[0] != '$')
+            {
+                uart_num = 0;
+                car.uart = SP_HEADER_ERR;
+            }
+            else
+                car.uart = SP_WAIT;
+            if (uart_num == PACK_LEN)
+            {
+                if (uart_buff[PACK_LEN - 1] == '\n')
+                    car.uart = SP_OK;
+                else
+                    car.uart = SP_TAIL_ERR;
+                uart_num = 0;
+            }
+            if(car.uart == SP_HEADER_ERR || car.uart == SP_TAIL_ERR)
+                rt_kprintf8("typr:%d,err:%d\n",car.uart,uart_buff[0]);

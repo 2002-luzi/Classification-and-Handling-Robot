@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "zf_qtimer.h": "c",
+        "cstdlib": "c",
+        "zf_rom_api.h": "c",
+        "fsl_wdog.h": "c",
+        "fsl_cache.h": "c",
+        "zf_flash.h": "c",
+        "ips_refresh.h": "c",
+        "evkmimxrt1064_flexspi_nor_config.h": "c",
+        "fsl_device_registers.h": "c",
+        "fsl_clock.h": "c",
+        "fsl_rtwdog.h": "c",
+        "string.h": "c",
+        "headfile.h": "c",
+        "pid.h": "c",
+        "encoder.h": "c",
+        "arm_math.h": "c",
+        "motionplanning.h": "c",
+        "icm.h": "c",
+        "seekfree_scc8660_csi.h": "c",
+        "zf_pwm.h": "c",
+        "pic_pick.h": "c",
+        "seekfree_icm20602.h": "c",
+        "motor.h": "c"
+    }
+}
