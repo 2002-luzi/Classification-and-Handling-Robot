@@ -17,6 +17,7 @@ In this competition, our robot successfully detected pictures on the ground, cla
 - Dog
 - Horse
 - Pig
+  
 And based on the three big categories, ** Animals, Fruits, Transports **, pictures were carried to three different designated places respectively.
 --
 Based on [Seekfree I.MX-RT1064 Open-source Library](https://gitee.com/seekfree/RT1064_Library) and [OpenART](https://github.com/nxp-mcuxpresso/OpenART?tab=readme-ov-file).\\
